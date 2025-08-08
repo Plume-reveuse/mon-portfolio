@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio d'une plume rêveuse</title>
+    <!-- Utilisation du CDN de Tailwind CSS pour une mise en page rapide et moderne -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Définition de la police de caractères Inter pour une meilleure lisibilité */
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        /* Style pour les sections du portfolio */
+        .section-container {
+            @apply p-8 rounded-xl shadow-lg bg-white;
+        }
+        /* Style pour la mise en évidence des titres */
+        .highlight-text {
+            @apply text-indigo-600 font-bold;
+        }
+        /* Animations et transitions pour une meilleure expérience utilisateur */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1.0s; }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen">
+
+    <main class="container mx-auto p-4 md:p-8 max-w-4xl space-y-8 mt-8">
+
+        <!-- En-tête du portfolio -->
+        <header class="text-center space-y-2 fade-in">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                Portfolio d'une plume rêveuse
+            </h1>
+            <img
+            src="https://cdn.pixabay.com/photo/2016/11/29/06/15/feather-1867335_960_720.jpg"
+                alt="Plume poétique"
+                class="mx-auto my-4 w-full max-w-md rounded-lg shadow-md">    
+            <p class="text-lg md:text-xl text-gray-600">
+                L'histoire d'une auteure qui a fait de sa plume un pont vers l'émotion.
+            </p>
+        </header>
+
+        <!-- Section "Qui je suis" -->
+        <section class="section-container fade-in delay-1">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 highlight-text">Qui je suis</h2>
+            <p class="mb-4">J'ai appris à lire très jeune, prédisposée à apprendre et curieuse de tout. Mes grands-parents avaient choisi de faire de cet apprentissage un jeu et dès l'âge de 3 ans, j'ai commencé à lire les petits "je lis déjà" et autres. La vie à la maison étant ce qu'elle était, je me réfugiais dans la lecture pour échapper au quotidien. Je suis dépendante des mots, à la manière dont les auteurs les assemblent pour transmettre des images, des émotions, me faire voyager, sans jamais quitter le lieu où je me cachais. Il m'était impératif de comprendre chaque mot, l'usage du dictionnaire s'imposa surtout au début et encore aujourd'hui.</p>
+            <p class="mb-4">De cette petite fille qui lisait à l'écriture, il n'y a eu qu'un pas. Mon institutrice de CE m’avait demandé ce que je pensais de la photographie d'un tableau. Elle voulait me faire parler mais aucun son n'est sorti par contre, le lendemain je lui ai donné une page d'un cahier petit format avec ce que cette photo m'avait inspiré. Par la suite, je me suis mise à écrire des petits textes, des poèmes, j'adore tout ce qui rime.</p>
+            <p class="mb-4">Et puis, j'ai envisagé d'écrire un livre. Le monde de la lecture, qu'il soit fictionnel ou ancré dans le réel m'a toujours permis d'exister, de me sentir vivante et libre. De me plonger dans des mondes que je ne connaîtrais pas, plus, voir jamais.</p>
+            <p class="mb-4">Lorsque je me suis mise à écrire, j'ai compris que je pouvais me créer mon monde, même en quelques lignes, un monde dans lequel je n'étais plus la femme faible, ni l'enfant maltraité. Un monde où je pouvais être celle qui vibre au plus profond de moi, celle qui exprime comment elle perçoit le monde qui l'entoure même si personne ne comprend.</p>
+            <p>Je pose des mots sur chaque émotion comme d'autres brodent des motifs sur du tissu, cela m'apaise, me libère et surtout me permet de m'accepter. Écrire est devenu ma manière de réfléchir, de rester debout dans la tempête émotionnelle de ma vie, d'appréhender un monde tellement loin de moi, de manière subtile et logique. Je ne détiens pas toutes les réponses, encore moins la vérité absolue, mais mes lectures renforcées par l'analyse que je m'impose lorsque j'écris m'ont permis d'acquérir mes réponses.</p>
+        </section>
+
+        <!-- Section "Mon œuvre" -->
+        <section class="section-container fade-in delay-2">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 highlight-text">Mon œuvre</h2>
+            <h3 class="text-xl font-semibold mb-2">Oniria: Fractures et Renaissance</h3>
+            <p class="text-gray-600 italic">Thèmes explorés :</p>
+            <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 mt-2 text-gray-700">
+                <p>J'explore la reconstruction après l'effondrement, le lien entre les êtres abîmés, la mémoire du corps et la résilience de l'âme. C'est une traversée d'un fragment de vie.</p>
+            </blockquote>
+        </section>
+
+        <!-- Section "Ma vision de l'écriture" -->
+        <section class="section-container fade-in delay-3">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 highlight-text">Ma vision de l'écriture</h2>
+            <p>Quand je pense à l'écriture, mon imaginaire s'éveille et se matérialise...</p>
+            <p class="mt-4">Je suis le pont entre l'apaisement de ce breuvage amer et chaud, qui coule dans la gorge et me permet d'assumer une journée morbide. Je suis le point d'ancrage entre cette saveur qui me maintient éveillée et me permet d'avancer alors que tout me crie d'arrêter.</p>
+        </section>
+
+        <!-- Section "Mon offre" -->
+        <section class="section-container fade-in delay-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 highlight-text">Mon offre</h2>
+            <p class="text-lg md:text-xl font-semibold text-center text-gray-700">
+                Je te propose d'être le lien émotionnel entre ton histoire et le cœur de ton public.
+            </p>
+        </section>
+
+        <!-- Nouvelle section pour les liens et les réseaux -->
+        <section class="section-container fade-in delay-5 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 highlight-text">Retrouvez-moi ailleurs</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <!-- Lien vers le blog -->
+                <a href="deferlanteemotive.blogspot.com" class="inline-block px-6 py-3 bg-indigo-600 text-white text-lg font-semibold rounded-full shadow-md hover:bg-indigo-700 transition duration-300">
+                    Mon Blog
+                </a>
+                <!-- Lien vers la chaîne YouTube -->
+                <a href="https://www.youtube.com/@DanslesouffledeNastja" class="inline-block px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-full shadow-md hover:bg-red-700 transition duration-300">
+                    Ma Chaîne YouTube
+                </a>
+                <!-- Lien vers les ouvrages en cours -->
+                <!-- Lien vers l'adresse e-mail --> <a href="mailto:sandrine.chehere.auteur@gmail.com" class="inline-block px-6 py-3 bg-gray-800 text-white text-lg font-semibold rounded-full shadow-md hover:bg-gray-900 transition duration-300"> Contactez-moi par e-mail </a>
+                <a href="https://plume-reveuse.github.io/mon-portfolio/" class="inline-block px-6 py-3 bg-gray-800 text-white text-lg font-semibold rounded-full shadow-md hover:bg-gray-900 transition duration-300">
+                    Ouvrages en cours
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-8 p-4 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 Portfolio d'une plume rêveuse. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
